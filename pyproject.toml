@@ -1,3 +1,5 @@
+version = "0.5.4"
+
 [project]
 name = "pre_commit_configuration"
 description = "Pre-commit centralized configuration project for the Datagraph & Content"
