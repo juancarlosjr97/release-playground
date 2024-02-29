@@ -9,3 +9,4 @@ repos:
     hooks:
       - id: pre-commit-hooks-commit-message-linter
       - id: pre-commit-hooks-javascript-linter
+version: 0.5.3

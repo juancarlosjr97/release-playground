@@ -3,6 +3,15 @@
 This changelog is updated automatically using release-it.
 
 
+## [0.5.3](https://github.com/juancarlosjr97/release-playground/compare/0.5.2...0.5.3) (2024-02-29)
+
+
+### Chores
+
+* testing bumper ([ca099fb](https://github.com/juancarlosjr97/release-playground/commit/ca099fbd1a8c70424a27ec41296eb862c69da3a6))
+* testing bumper ([afe2c4d](https://github.com/juancarlosjr97/release-playground/commit/afe2c4de2db89ad29ea25b4e45d5d7c6823ed4ac))
+* testing bumper ([f16d353](https://github.com/juancarlosjr97/release-playground/commit/f16d353c1a12c6aa9e613ecc8ba9bf8249f29a1b))
+
 ## [0.5.2](https://github.com/juancarlosjr97/release-playground/compare/0.5.1...0.5.2) (2024-02-29)
 
 
