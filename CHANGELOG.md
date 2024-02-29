@@ -3,6 +3,8 @@
 This changelog is updated automatically using release-it.
 
 
+## [0.5.1](https://github.com/juancarlosjr97/release-playground/compare/0.5.0...0.5.1) (2024-02-29)
+
 ## [0.5.0](https://github.com/juancarlosjr97/release-playground/compare/0.4.0...0.5.0) (2024-02-29)
 
 
