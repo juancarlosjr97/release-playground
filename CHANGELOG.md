@@ -3,6 +3,13 @@
 This changelog is updated automatically using release-it.
 
 
+## [0.5.2](https://github.com/juancarlosjr97/release-playground/compare/0.5.1...0.5.2) (2024-02-29)
+
+
+### Chores
+
+* testing project bump configuration ([16b11e8](https://github.com/juancarlosjr97/release-playground/commit/16b11e81d2ba8643bc2a99913b00858aa8e42bb2))
+
 ## [0.5.1](https://github.com/juancarlosjr97/release-playground/compare/0.5.0...0.5.1) (2024-02-29)
 
 ## [0.5.0](https://github.com/juancarlosjr97/release-playground/compare/0.4.0...0.5.0) (2024-02-29)
