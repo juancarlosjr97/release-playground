@@ -3,6 +3,13 @@
 This changelog is updated automatically using release-it.
 
 
+## [0.2.0](https://github.com/juancarlosjr97/release-playground/compare/0.1.0...0.2.0) (2024-02-29)
+
+
+### Features
+
+* updating testing toml file ([9419377](https://github.com/juancarlosjr97/release-playground/commit/9419377881e96db57a2a9a834ae1f65a66e52e89))
+
 ## 0.1.0 (2024-02-29)
 
 
