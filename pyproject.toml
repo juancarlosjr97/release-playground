@@ -1,30 +1,27 @@
 [project]
 name = "pre_commit_configuration"
-description="Pre-commit centralized configuration project for the Datagraph & Content"
+description = "Pre-commit centralized configuration project for the Datagraph & Content"
 readme = "README.md"
-version = "0.3.0"
+version = "0.4.0"
+dependencies = [ "gitlint==0.19.1" ]
 
-dependencies = [
-  "gitlint==0.19.1"
-]
+  [project.urls]
+  repository = "https://gitlab.com/rs-devsecops/rs-dev/datagraph-and-content/code-standards-datagraph-and-content"
 
-[project.urls]
-repository = "https://gitlab.com/rs-devsecops/rs-dev/datagraph-and-content/code-standards-datagraph-and-content"
-
-[project.scripts]
-cli-commit-message-linter = "pre_commit_configuration.run_pre_commit_hooks_centralized:use_commit_message_linter_yaml"
-cli-javascript-linter = "pre_commit_configuration.run_pre_commit_hooks_centralized:use_javascript_linter_yaml"
+  [project.scripts]
+  cli-commit-message-linter = "pre_commit_configuration.run_pre_commit_hooks_centralized:use_commit_message_linter_yaml"
+  cli-javascript-linter = "pre_commit_configuration.run_pre_commit_hooks_centralized:use_javascript_linter_yaml"
 
 [build-system]
-requires = ["setuptools"]
+requires = [ "setuptools" ]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 include-package-data = true
 
-[tool.setuptools.package-data]
-"*" = ["*.yaml"]
+  [tool.setuptools.package-data]
+  "*" = [ "*.yaml" ]
 
 [tool.setuptools.packages.find]
-include = ["pre_commit_configuration*"]
-exclude = ["workspaces*"]
+include = [ "pre_commit_configuration*" ]
+exclude = [ "workspaces*" ]
