@@ -59,9 +59,8 @@ module.exports = {
     },
     "@release-it/bumper": {
       out: {
-        out: ["pyproject.toml", ".pre-commit-config.yaml"],
+        file: ["pyproject.toml", ".pre-commit-config.yaml"],
         path: ["project.version", "repos[0].rev"],
-        type: "text/toml",
       },
     },
   },
