@@ -3,6 +3,13 @@
 This changelog is updated automatically using release-it.
 
 
+## [0.3.0](https://github.com/juancarlosjr97/release-playground/compare/0.2.0...0.3.0) (2024-02-29)
+
+
+### Features
+
+* testing ([c1876e9](https://github.com/juancarlosjr97/release-playground/commit/c1876e944cf0dda3239fd2dcc3a462d8a1812c12))
+
 ## [0.2.0](https://github.com/juancarlosjr97/release-playground/compare/0.1.0...0.2.0) (2024-02-29)
 
 
