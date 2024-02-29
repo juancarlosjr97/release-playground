@@ -15,4 +15,4 @@ jobs:
       - name: Running release-it using GitHub Action
         uses: juancarlosjr97/release-it-containerized:0.6.2
         with:
-            plugins_list: "@release-it/conventional-changelog@latest,@release-it/bumper@latest"
+          plugins_list: "@release-it/conventional-changelog@latest,@release-it/bumper@latest"
