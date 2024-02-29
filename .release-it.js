@@ -57,30 +57,13 @@ module.exports = {
         ],
       },
     },
-    "@release-it/bumper": [
-      {
-        in: {
-          file: "pyproject.toml",
-          type: "text/toml",
-        },
-        out: {
-          file: "pyproject.toml",
-          path: "project.version",
-          type: "text/toml",
-        },
+    "@release-it/bumper": {
+      out: {
+        out: ["pyproject.toml", ".pre-commit-config.yaml"],
+        path: ["project.version", "repos[0].rev"],
+        type: "text/toml",
       },
-      {
-        in: {
-          file: ".pre-commit-config.yaml",
-          type: "text/yaml",
-        },
-        out: {
-          file: ".pre-commit-config.yaml",
-          path: "repos[0].rev",
-          type: "text/yaml",
-        },
-      },
-    ],
+    },
   },
   git: {
     commitMessage: "Released version ${version}",
