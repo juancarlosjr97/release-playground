@@ -4,8 +4,7 @@ module.exports = {
       gitRawCommitsOpts: {
         path: ".",
       },
-      header:
-        "# Changelog\n\nThis changelog is updated automatically using release-it.\n",
+      header: "# Changelog\n\nThis changelog is updated automatically using release-it.\n",
       infile: "CHANGELOG.md",
       path: ".",
       preset: {
@@ -58,28 +57,30 @@ module.exports = {
         ],
       },
     },
-    "@release-it/bumper": {
-      in: {
-        "file": "pyproject.toml",
-        "type": "text/toml"
+    "@release-it/bumper": [
+      {
+        in: {
+          file: "pyproject.toml",
+          type: "text/toml",
+        },
+        out: {
+          file: "pyproject.toml",
+          path: "project.version",
+          type: "text/toml",
+        },
       },
-      out: {
-        "file": "pyproject.toml",
-        "path": "project.version",
-        "type": "text/toml"
-      }
-    },
-    "@release-it/bumper": {
-      in: {
-        "file": ".pre-commit-config.yaml",
-        "type": "text/yaml"
+      {
+        in: {
+          file: ".pre-commit-config.yaml",
+          type: "text/yaml",
+        },
+        out: {
+          file: ".pre-commit-config.yaml",
+          path: "repos[0].rev",
+          type: "text/yaml",
+        },
       },
-      out: {
-        "file": ".pre-commit-config.yaml",
-        "path": "repos[0].rev",
-        "type": "text/yaml"
-      }
-    },
+    ],
   },
   git: {
     commitMessage: "Released version ${version}",
