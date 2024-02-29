@@ -1,10 +1,8 @@
-version = "0.5.3"
-
 [project]
 name = "pre_commit_configuration"
 description = "Pre-commit centralized configuration project for the Datagraph & Content"
 readme = "README.md"
-version = "0.5.1"
+version = "0.5.3"
 dependencies = [ "gitlint==0.19.1" ]
 
   [project.urls]
