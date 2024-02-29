@@ -69,6 +69,17 @@ module.exports = {
         "type": "text/toml"
       }
     },
+    "@release-it/bumper": {
+      in: {
+        "file": ".pre-commit-config.yaml",
+        "type": "text/yaml"
+      },
+      out: {
+        "file": ".pre-commit-config.yaml",
+        "path": "repos[0].rev",
+        "type": "text/yaml"
+      }
+    },
   },
   git: {
     commitMessage: "Released version ${version}",

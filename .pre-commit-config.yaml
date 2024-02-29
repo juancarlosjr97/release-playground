@@ -1,0 +1,8 @@
+---
+default_install_hook_types: [commit-msg, pre-commit, prepare-commit-msg]
+repos:
+  - repo: https://gitlab.com/rs-devsecops/rs-dev/datagraph-and-content/code-standards-datagraph-and-content
+    rev: 2.8.1
+    hooks:
+      - id: pre-commit-hooks-commit-message-linter
+      - id: pre-commit-hooks-javascript-linter
