@@ -3,5 +3,13 @@
     "extends": [
         "config:base",
         "group:all"
+    ],
+    "packageRules": [
+        {
+            "matchDepTypes": [
+                "devDependencies"
+            ],
+            "commitMessagePrefix": "choredev"
+        }
     ]
 }
