@@ -9,7 +9,7 @@
             "matchDepTypes": [
                 "devDependencies"
             ],
-            "commitMessagePrefix": "choredev"
+            "commitMessagePrefix": "choredev(deps):"
         }
     ]
 }
