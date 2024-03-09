@@ -10,6 +10,12 @@
                 "devDependencies"
             ],
             "commitMessagePrefix": "choredev(deps):"
+        },
+        {
+            "matchDepTypes": [
+                "dependencies"
+            ],
+            "commitMessagePrefix": "chore(deps):"
         }
     ]
 }
