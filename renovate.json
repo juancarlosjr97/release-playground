@@ -7,18 +7,16 @@
     "packageRules": [
         {
             "matchDepTypes": [
-                "devDependencies"
+                "devDependencies",
+                "dependencies"
             ],
-            "prPriority": 5,
-            "commitMessagePrefix": "choredev(deps):"
+            "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}{{#if (equals depType 'devDependencies')}}chore(deps):{{/if}}{{/if}}"
         },
         {
             "matchDepTypes": [
-                "dependencies",
-                "devDependencies"
+                "dependencies"
             ],
-            "prPriority": -1,
-            "commitMessagePrefix": "chore(deps):"
+            "commitMessagePrefix": "{{#if (equals depType 'devDependencies')}}choredev(deps):{{/if}}"
         }
     ]
 }
