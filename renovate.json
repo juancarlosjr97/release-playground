@@ -10,7 +10,7 @@
                 "dependencies",
                 "devDependencies"
             ],
-            "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}{{#if (equals depType 'devDependencies')}}chore(deps):{{else}}chore(deps):{{/if}}{{else}}{{#if (equals depType 'devDependencies')}}choredev(deps):{{/if}}choredev(deps):{{/if}}"
+            "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}chore(deps):{{else if (equals depType 'devDependencies')}}choredev(deps):{{else}}choredev(deps):{{/if}}"
         }
     ]
 }
