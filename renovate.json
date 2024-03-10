@@ -9,7 +9,7 @@
             "matchDepTypes": [
                 "devDependencies"
             ],
-            "prPriority": -1,
+            "prPriority": 5,
             "commitMessagePrefix": "choredev(deps):"
         },
         {
@@ -17,7 +17,7 @@
                 "dependencies",
                 "devDependencies"
             ],
-            "prPriority": 5,
+            "prPriority": -1,
             "commitMessagePrefix": "chore(deps):"
         }
     ]
