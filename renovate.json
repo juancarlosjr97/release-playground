@@ -14,7 +14,7 @@
         },
         {
             "matchDepTypes": [
-                "dependencies"
+                "devDependencies"
             ],
             "commitMessagePrefix": "{{#if (equals depType 'devDependencies')}}choredev(deps):{{/if}}"
         }
