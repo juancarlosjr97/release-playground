@@ -7,7 +7,8 @@
     "packageRules": [
         {
             "matchDepTypes": [
-                "*"
+                "dependencies",
+                "devDependencies"
             ],
             "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}{{#if (equals depType 'devDependencies')}}chore(deps):{{else}}chore(deps):{{/if}}{{else}}{{#if (equals depType 'devDependencies')}}choredev(deps):{{/if}}{{else}}choredev(deps):{{/if}}"
         }
