@@ -9,7 +9,7 @@
             "matchDepTypes": [
                 "*"
             ],
-            "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}chore(deps):{{else}}choredev(deps):{{/if}}"
+            "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}{{#unless (equals depType 'devDependencies')}}chore(deps):{{/unless}}{{else}}choredev(deps):{{/if}}"
         }
     ]
 }
