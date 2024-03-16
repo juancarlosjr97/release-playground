@@ -2,14 +2,19 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:base",
+        "regexManagers:dockerfileVersions",
         "group:all"
     ],
     "packageRules": [
         {
-            "matchDepTypes": [
-                "*"
+            "matchDatasources": [
+                "docker"
             ],
-            "commitMessagePrefix": "{{#if (equals depType 'dependencies')}}{{#unless (equals depType 'devDependencies')}}chore(deps):{{/unless}}{{else}}choredev(deps):{{/if}}"
+            "matchPackageNames": [
+                "docker.io/library/node"
+            ],
+            "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
+            "versioning": "node"
         }
     ]
 }
